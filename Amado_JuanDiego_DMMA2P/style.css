@@ -1,0 +1,342 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(36, 36, 71);
+}
+
+section {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(28, 28, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.logo {
+    background-image: url("Images/Logo de StarFilms.jpg");
+    background-repeat: no-repeat;
+    max-width: 100px;
+    height: auto;
+    text-indent: -200px;
+    overflow: hidden;
+    font-size: 0;
+    margin-right: auto;
+}
+
+nav ul {
+    width: 100%;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    flex-direction: column;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+    background-color: red;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    transition: background-color 0.3s ease-in-out;
+    border-bottom: 1px solid white;
+    display: flex;
+    margin: 5%;
+}
+
+nav ul li a:hover {
+    background-color: rgb(87, 87, 247);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: azure;
+    text-align: center;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+
+figure {
+    display: flex;
+}
+
+.banner {
+    text-align: center;
+    padding-top: 3em;
+    max-width: 900px;
+}
+
+.banner_contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px 0;
+}
+
+.banner_bg {
+    background-color: black;
+    margin-top: 0;
+    margin: 0;
+}
+
+.banner_title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.banner_description {
+    font-size: 15px;
+    max-width: 700px;
+    margin: 0 auto 15px;
+    padding: 0 20px;
+}
+
+.banner_title,
+.banner_description {
+    color: rgb(255, 249, 215);
+}
+
+.banner_img {
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagen-responsive {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.imagen-responsive h3 {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: black;
+    font-size: 1rem;
+    border-bottom: 3px solid red;
+    color: rgb(255, 210, 190);
+}
+
+.saga {
+    color: rgb(255, 222, 179);
+}
+
+.imagen-responsive h3 a {
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(255, 230, 216);
+    align-items: center;
+}
+
+.imagen-responsive h3:hover {
+    background-color: rgb(3, 3, 110);
+    cursor: pointer;
+}
+
+div .imagen-responsive h3 a:hover {
+    cursor: pointer;
+    background-color: rgb(3, 3, 110);
+    transition: background-color 0.3s ease-in-out;
+}
+
+div .imagen-responsive h3 a:hover {
+    display: block;
+    background-color: rgb(3, 3, 110);
+}
+
+.texto-oculto p {
+    display: none;
+    padding: 1rem;
+    color: rgb(228, 255, 255);
+}
+
+.texto-oculto:hover p {
+    display: block;
+}
+
+.articulo {
+    background-color: black;
+    color: rgb(218, 195, 195);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0; /* Agregado margen para separación */
+    padding: 20px;
+}
+
+.articulo h2 {
+    display: block;
+}
+
+.opiniones {
+    background-color: black;
+    padding: 0;
+    color: rgb(255, 248, 238);
+}
+
+.resenia {
+    padding: 15px;
+    color: rgb(147, 166, 184);
+}
+
+.footer {
+    background-color: rgb(46, 1, 46);
+    min-height: 100px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.footer-derechos {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+.footer-derechos p {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-elem {
+    list-style: none;
+}
+
+.icon {
+    color: white;
+    font-size: 35px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.4s;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-elem {
+    list-style: none;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+
+.menu-icon:hover {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/*Btn */
+
+.button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: red;
+    padding: 10px 15px;
+    display: flex;
+    max-width: fit-content;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+    background-color: rgb(32, 32, 155);
+}
+
+@media (min-width: 760px) {
+    .banner_contenedor {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    header div {
+        flex-direction: column;
+    }
+
+    /* Solucionado el problema de anidamiento de media queries */
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+}
